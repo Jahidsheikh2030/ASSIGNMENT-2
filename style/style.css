@@ -1,1 +1,96 @@
 @import "tailwindcss"
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.heading h3 span {
+  color: orange;
+}
+
+.heading p {
+  color: #4b5563;
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+.deal-cards {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.deal-card,
+.right-deal {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.right-deal {
+  height: 410px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.overlay a:hover {
+  background-color: #e5e7eb;
+}
