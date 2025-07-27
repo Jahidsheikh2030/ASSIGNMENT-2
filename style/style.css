@@ -1,7 +1,7 @@
 @import "tailwindcss"
 
 
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -94,3 +94,31 @@
 .overlay a:hover {
   background-color: #e5e7eb;
 }
+
+@media (max-width: 639px) {
+  .deal-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .left-deals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-deal,
+  .deal-card {
+    width: 100%;
+    height: 250px; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay {
+    text-align: center;
+  }
+}
+
+
