@@ -1,8 +1,7 @@
-@import "tailwindcss"
+@import "tailwindcss";
 
 
 *{
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   
@@ -95,7 +94,7 @@
   background-color: #e5e7eb;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 639px){
   .deal-cards {
     display: grid;
     grid-template-columns: 1fr;
